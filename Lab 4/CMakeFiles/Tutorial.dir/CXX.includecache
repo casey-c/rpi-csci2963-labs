@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/casey/opensource/rpi-csci2963-labs/Lab 4/tutorial/tutorial.cxx
+TutorialConfig.h
+/home/casey/opensource/rpi-csci2963-labs/Lab 4/tutorial/TutorialConfig.h
+math.h
+-
+stdio.h
+-
+stdlib.h
+-
+MathFunctions.h
+/home/casey/opensource/rpi-csci2963-labs/Lab 4/tutorial/MathFunctions.h
+
+TutorialConfig.h
+
+tutorial/MathFunctions/MathFunctions.h
+

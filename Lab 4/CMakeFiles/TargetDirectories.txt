@@ -1,0 +1,3 @@
+/home/casey/opensource/rpi-csci2963-labs/Lab 4/MathFunctions/CMakeFiles/MakeTable.dir
+/home/casey/opensource/rpi-csci2963-labs/Lab 4/MathFunctions/CMakeFiles/MathFunctions.dir
+/home/casey/opensource/rpi-csci2963-labs/Lab 4/CMakeFiles/Tutorial.dir

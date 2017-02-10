@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/casey/opensource/rpi-csci2963-labs/Lab 4/tutorial/MathFunctions/MathFunctions.h
+
+/home/casey/opensource/rpi-csci2963-labs/Lab 4/tutorial/MathFunctions/mysqrt.cxx
+MathFunctions.h
+/home/casey/opensource/rpi-csci2963-labs/Lab 4/tutorial/MathFunctions/MathFunctions.h
+TutorialConfig.h
+/home/casey/opensource/rpi-csci2963-labs/Lab 4/tutorial/MathFunctions/TutorialConfig.h
+math.h
+-
+
+TutorialConfig.h
+
