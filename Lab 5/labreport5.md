@@ -2,11 +2,11 @@
 
 
 ## okcollege-web-client
-### Contributers: 4
-### Num Lines: 11488
-### Initial commit: September 12, 2016 (seveibar)
-### Latest commit: December 7, 2016 (jowlee)
-### Branches: 12
+Contributers: 4
+Num Lines: 11488
+Initial commit: September 12, 2016 (seveibar)
+Latest commit: December 7, 2016 (jowlee)
+Number of Branches: 12
 | Branch name | Last Activity |
 |:------------|--------------:|
 | master | 2 months |
