@@ -18,3 +18,7 @@
 | basic-form | 5 months |
 | landing-bstrap | 5 months |
 | survey-fixes | 5 months |
+
+##### Actual stats:
+###### Line count:  8755
+###### It looks like seveibar (who started the project) definitely is the project lead with the majority of the commits
