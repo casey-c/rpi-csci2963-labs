@@ -74,3 +74,5 @@ master, chatfeature, liscense, author-color, chat, chatfeature, colorful_chats, 
 <hr />
 As a table, we watched all of the gource videos for the above repositories. We also took a look at some bigger projects on YouTube, such as the linux kernel. We didn't end up recording the video and uploading to YouTube because none of us had enough disk space to hold the gource file.
 
+<hr />
+## Part 2 is included as the .py files in this folder
