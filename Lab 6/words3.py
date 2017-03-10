@@ -38,7 +38,12 @@ def generate_graph(words):
             left, c, right = word[0:i], word[i], word[i+1:]
             j = lookup[c] # lowercase.index(c)
             for cc in lowercase[j+1:]:
-                yield left + cc + right
+               yield left + cc + right
+               yield left + right + cc
+               yield cc + left + right
+               yield cc + right + left
+               yield right + cc + left
+               yield right + left + cc
     candgen = ((word, cand) for word in sorted(words)
                for cand in edit_distance_one(word) if cand in words)
     G.add_nodes_from(words)
@@ -49,14 +54,13 @@ def generate_graph(words):
 def words_graph():
     """Return the words example graph from the Stanford GraphBase"""
     import gzip
-    fh=gzip.open('word4.gz','r')
+    fh=gzip.open('word5.gz','r')
     words=set()
     for line in fh.readlines():
         line = line.decode()
-        # print(line)
         if line.startswith('*'):
             continue
-        w=str(line[0:4])
+        w=str(line[0:5])
         words.add(w)
     return generate_graph(words)
 
@@ -69,8 +73,9 @@ if __name__ == '__main__':
           %(number_of_nodes(G),number_of_edges(G)))
     print("%d connected components" % number_connected_components(G))
 
-    for (source,target) in [('cold','warm'),
-                            ('love','hate')]:
+    for (source,target) in [('chaos','order'),
+                            ('nodes','graph'),
+                            ('pound','marks')]:
         print("Shortest path between %s and %s is"%(source,target))
         try:
             sp=shortest_path(G, source, target)

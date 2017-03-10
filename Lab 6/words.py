@@ -70,6 +70,7 @@ if __name__ == '__main__':
 
     for (source,target) in [('chaos','order'),
                             ('nodes','graph'),
+                            ('moron','smart'),
                             ('pound','marks')]:
         print("Shortest path between %s and %s is"%(source,target))
         try:
