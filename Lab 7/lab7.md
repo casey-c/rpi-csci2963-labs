@@ -178,3 +178,22 @@ Here are the results:
 [165] {gpa=3.78}                => {admit=0} 0.008   0.750      1.099
 [166] {gpa=3.32}                => {admit=0} 0.008   0.750      1.099
 </pre>
+
+
+I think the commands I ran weren't the greatest, but there are still some correlations that we can see in the data. First off, those who were likely to get in (admit=1) were typically closest to rank 1 and had a moderately high GPA (> 3.5). Most rank 4 people were not admitted unless they had a high GPA and GRE score. These results seem typical of what you'd expect to see. I'm not entirely sure how to sort the lhs to be above a threshold (the book just included examples like gpa=3.0 instead of what I wanted to see which is gpa>=3.0); that I feel would have produced cleaner/more interesting results, but I can still look over the above ruleset and manually try and decipher it. 
+
+The following graph is worthless:
+
+<img src="https://github.com/casey-c/rpi-csci2963-labs/raw/master/Lab%207/worthless.png" />
+
+
+
+### Election Data
+
+### Top Movies
+
+### Observatory / repo
+https://rcos.io/projects/casey-c/egg/profile
+https://github.com/casey-c/egg
+
+Status of the project is on the blog posts
