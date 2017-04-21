@@ -189,8 +189,49 @@ The following graph is worthless:
 
 
 ### Election Data
+Here's the command I ran to determine the states in which Bush had a larger percentage of votes than Kerry (29 of em in total):
+<pre>
+table(elect[elect["BushPct"]>elect["KerryPct"],"State"])
+
+       Alabama         Alaska        Arizona       Arkansas 
+             1              1              1              1 
+      Colorado        Florida        Georgia          Idaho 
+             1              1              1              1 
+       Indiana           Iowa         Kansas       Kentucky 
+             1              1              1              1 
+     Louisiana    Mississippi       Missouri        Montana 
+             1              1              1              1 
+      Nebraska         Nevada     New Mexico North Carolina 
+             1              1              1              1 
+  North Dakota           Ohio       Oklahoma South Carolina 
+             1              1              1              1 
+  South Dakota      Tennessee          Texas           Utah 
+             1              1              1              1 
+      Virginia  West Virginia        Wyoming 
+             1              1              1 
+</pre>
 
 ### Top Movies
+Here's the command for finding movies with numbers in their title: (kind of a lazy way to search for sequels, since there are still movies listed that aren't sequels, and it's probably missing a few that are and just don't have the number in the title):
+<pre>
+topmovies[grep("[0-9]+", topmovies$name, ignore.case = T), "name"]
+</pre>
+From this command above, there are 79 movies with numbers in the title. Just briefly glancing over it, I see movies like 300 show up, which to my knowledge isn't actually a sequel, so yeah, this metric is not perfect.
+
+\# of movies with the word man: 41
+<pre>
+topmovies[grep("man", topmovies$name, ignore.case = T), "name"]
+</pre>
+
+\# of movies with star wars in the title: 6
+<pre>
+topmovies[grep("star wars", topmovies$name, ignore.case = T), "name"]
+</pre>
+
+\# of movies with super in the title: 5
+<pre>
+topmovies[grep("super", topmovies$name, ignore.case = T), "name"]
+</pre>
 
 ### Observatory / repo
 https://rcos.io/projects/casey-c/egg/profile
